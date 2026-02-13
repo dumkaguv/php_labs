@@ -140,7 +140,7 @@
 
   ```bash
   curl -X GET http://sandbox.usm.com \
-  -H "User-Agent: Ivan Ivanov"
+  -H "User-Agent: Dmitrii Golovicichin"
   ```
 
   - User-Agent — это HTTP-заголовок, который сообщает серверу информацию о клиенте, отправляющем запрос:
@@ -199,7 +199,7 @@
 
   ```bash
   curl -X PUT http://sandbox.usm.com/cars/1 \
-  -H "User-Agent: Ivan Ivanov" \
+  -H "User-Agent: Dmitrii Golovicichin" \
   -H "Content-Type: application/json" \
   -d '{
     "make": "Toyota",
