@@ -127,31 +127,6 @@ $totalTransactions = count($transactions);
         font-weight: 700;
         color: var(--accent);
       }
-
-      @media (max-width: 720px) {
-        body {
-          padding: 24px 14px;
-        }
-
-        .table-card {
-          border-radius: 22px;
-        }
-
-        .table-card__header {
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 20px 20px 12px;
-        }
-
-        .transactions-table thead th,
-        .transactions-table tbody td {
-          padding: 14px;
-        }
-
-        .hero p {
-          font-size: 16px;
-        }
-      }
     </style>
   </head>
   <body>
