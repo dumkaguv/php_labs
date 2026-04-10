@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 /**
- * Provides small helpers for safe HTML output.
+ * Contains helper methods for safe HTML output.
  */
 final class Html
 {
     /**
-     * Escapes a value for safe rendering inside HTML.
+     * Escapes a value for HTML output.
      */
     public static function escape(string $value): string
     {

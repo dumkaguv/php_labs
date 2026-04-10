@@ -1,0 +1,96 @@
+<?php
+declare(strict_types=1);
+
+return [
+    [
+        'id' => 1,
+        'date' => '2019-01-01',
+        'amount' => 100.00,
+        'description' => 'Payment for groceries',
+        'merchant' => 'SuperMart',
+    ],
+    [
+        'id' => 2,
+        'date' => '2020-02-15',
+        'amount' => 75.50,
+        'description' => 'Dinner with friends',
+        'merchant' => 'Local Restaurant',
+    ],
+    [
+        'id' => 3,
+        'date' => '2021-07-10',
+        'amount' => 250.00,
+        'description' => 'Phone purchase',
+        'merchant' => 'ElectroShop',
+    ],
+    [
+        'id' => 4,
+        'date' => '2022-01-20',
+        'amount' => 42.30,
+        'description' => 'Taxi ride downtown',
+        'merchant' => 'CityTaxi',
+    ],
+    [
+        'id' => 5,
+        'date' => '2022-03-12',
+        'amount' => 15.99,
+        'description' => 'Music subscription',
+        'merchant' => 'TuneBox',
+    ],
+    [
+        'id' => 6,
+        'date' => '2022-06-03',
+        'amount' => 320.00,
+        'description' => 'Airline ticket',
+        'merchant' => 'SkyFly',
+    ],
+    [
+        'id' => 7,
+        'date' => '2022-09-18',
+        'amount' => 58.45,
+        'description' => 'Books and stationery',
+        'merchant' => 'BookWorld',
+    ],
+    [
+        'id' => 8,
+        'date' => '2023-01-07',
+        'amount' => 89.90,
+        'description' => 'Home utilities payment',
+        'merchant' => 'UtilityNet',
+    ],
+    [
+        'id' => 9,
+        'date' => '2023-04-25',
+        'amount' => 199.99,
+        'description' => 'Wireless headphones',
+        'merchant' => 'GadgetHub',
+    ],
+    [
+        'id' => 10,
+        'date' => '2023-08-14',
+        'amount' => 27.80,
+        'description' => 'Cinema tickets',
+        'merchant' => 'MovieTime',
+    ],
+    [
+        'id' => 11,
+        'date' => '2024-02-02',
+        'amount' => 140.00,
+        'description' => 'Monthly gym membership',
+        'merchant' => 'FitCenter',
+    ],
+    [
+        'id' => 12,
+        'date' => '2024-05-19',
+        'amount' => 63.20,
+        'description' => 'Fuel refill',
+        'merchant' => 'FastFuel',
+    ],
+    [
+        'id' => 13,
+        'date' => '2024-11-30',
+        'amount' => 410.75,
+        'description' => 'Winter clothing',
+        'merchant' => 'StyleStore',
+    ],
+];
