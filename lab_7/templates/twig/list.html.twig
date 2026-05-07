@@ -1,0 +1,39 @@
+<section class="card">
+    <h2>Saved records</h2>
+    <p class="muted">Click table headers to sort records.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th><a href="{{ sort_links.author.url }}">Author</a></th>
+                <th><a href="{{ sort_links.entry_date.url }}">Entry date</a></th>
+                <th><a href="{{ sort_links.mood.url }}">Mood</a></th>
+                <th>Activities</th>
+                <th>Sleep</th>
+                <th>Notes</th>
+                <th><a href="{{ sort_links.created_at.url }}">Created at</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if records is empty %}
+                <tr>
+                    <td colspan="8">No records yet.</td>
+                </tr>
+            {% endif %}
+
+            {% for record in records %}
+                <tr>
+                    <td>{{ record.title }}</td>
+                    <td>{{ record.author }}</td>
+                    <td>{{ record.entry_date }}</td>
+                    <td>{{ record.mood_label }}</td>
+                    <td>{{ record.activities_text }}</td>
+                    <td>{{ record.sleep_hours|format_sleep }}</td>
+                    <td>{{ record.notes|nl2br }}</td>
+                    <td>{{ record.created_at }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>

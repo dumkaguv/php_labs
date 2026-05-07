@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "First note",
+        "author": "Student",
+        "entry_date": "2026-05-07",
+        "mood": "happy",
+        "activities": [
+            "study",
+            "rest"
+        ],
+        "notes": "This is a simple example mood diary record.",
+        "sleep_hours": 8,
+        "created_at": "2026-05-07 18:00:00"
+    },
+    {
+        "id": 2,
+        "title": "dima",
+        "author": "dima",
+        "entry_date": "2026-05-07",
+        "mood": "calm",
+        "activities": [
+            "study"
+        ],
+        "notes": "1231231231",
+        "sleep_hours": 8,
+        "created_at": "2026-05-07 15:52:24"
+    }
+]

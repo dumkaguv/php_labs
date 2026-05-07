@@ -1,0 +1,86 @@
+<section class="card">
+    <h2>Add record</h2>
+
+    {% if success_message is not null %}
+        <div class="success">{{ success_message }}</div>
+    {% endif %}
+
+    <form method="post" action="{{ base_url }}">
+        <div class="grid">
+            <div class="field">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" value="{{ form_data.title }}">
+                {% if errors.title is defined %}
+                    <div class="error">{{ errors.title }}</div>
+                {% endif %}
+            </div>
+
+            <div class="field">
+                <label for="author">Author</label>
+                <input id="author" name="author" type="text" value="{{ form_data.author }}">
+                {% if errors.author is defined %}
+                    <div class="error">{{ errors.author }}</div>
+                {% endif %}
+            </div>
+
+            <div class="field">
+                <label for="entry_date">Entry date</label>
+                <input id="entry_date" name="entry_date" type="date" value="{{ form_data.entry_date }}">
+                {% if errors.entry_date is defined %}
+                    <div class="error">{{ errors.entry_date }}</div>
+                {% endif %}
+            </div>
+
+            <div class="field">
+                <label for="sleep_hours">Sleep hours</label>
+                <input id="sleep_hours" name="sleep_hours" type="number" min="0" max="24" value="{{ form_data.sleep_hours }}">
+                {% if errors.sleep_hours is defined %}
+                    <div class="error">{{ errors.sleep_hours }}</div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="mood">Mood</label>
+            <select id="mood" name="mood">
+                <option value="">Choose mood</option>
+                {% for value, label in moods %}
+                    <option value="{{ value }}" {% if form_data.mood == value %}selected{% endif %}>
+                        {{ label }}
+                    </option>
+                {% endfor %}
+            </select>
+            {% if errors.mood is defined %}
+                <div class="error">{{ errors.mood }}</div>
+            {% endif %}
+        </div>
+
+        <div class="field checkbox">
+            <label>Activities</label>
+            {% for value, label in activities %}
+                <label>
+                    <input
+                        type="checkbox"
+                        name="activities[]"
+                        value="{{ value }}"
+                        {% if value in form_data.activities %}checked{% endif %}
+                    >
+                    {{ label }}
+                </label>
+            {% endfor %}
+            {% if errors.activities is defined %}
+                <div class="error">{{ errors.activities }}</div>
+            {% endif %}
+        </div>
+
+        <div class="field">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes">{{ form_data.notes }}</textarea>
+            {% if errors.notes is defined %}
+                <div class="error">{{ errors.notes }}</div>
+            {% endif %}
+        </div>
+
+        <button class="button" type="submit">Save record</button>
+    </form>
+</section>
